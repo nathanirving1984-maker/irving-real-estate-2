@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Updates | Irving Real Estate</title>
+  <meta name="description" content="Local market updates for Marin and Sonoma County, CA from Nathan Irving.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">Irving <span>Real Estate</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="listings.html">Listings</a>
+        <a href="market-updates.html" aria-current="page">Market Updates</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-contact">
+        <span class="nav-phone">(415) 209-4864</span>
+        <a href="contact.html" class="btn btn--primary" style="padding:9px 18px;">Get in Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-banner container">
+      <span class="eyebrow">Market Updates</span>
+      <h1>Notes on the local market</h1>
+      <p>Short, occasional updates on conditions across Marin and Sonoma County, plus practical tips for buyers and sellers.</p>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="post-list" data-posts-list></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container cta-banner-inner">
+        <div>
+          <h2 style="margin-bottom:8px;">Want updates sent directly to you?</h2>
+          <p>Reach out and I'll keep you posted on conditions in the towns you care about most.</p>
+        </div>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn--accent">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Irving <span>Real Estate</span></div>
+          <p style="max-width:280px;">Local, attentive guidance for buying and selling homes across Marin &amp; Sonoma County.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="about.html">About Nathan</a>
+          <a href="listings.html">Current Listings</a>
+          <a href="market-updates.html">Market Updates</a>
+          <a href="testimonials.html">Testimonials</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+14152094864">(415) 209-4864</a>
+          <a href="mailto:nathanirving1984@gmail.com">nathanirving1984@gmail.com</a>
+          <a href="https://www.linkedin.com/in/nathan-irving-8bb08a265" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-current-year></span> Irving Real Estate. Equal Housing Opportunity.</span>
+        <span class="license-note">DRE# [Add license number]</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data/market-posts-data.js"></script>
+  <script src="js/market-updates.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
