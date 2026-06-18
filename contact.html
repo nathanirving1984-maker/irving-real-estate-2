@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Irving Real Estate</title>
+  <meta name="description" content="Get in touch with Nathan Irving, serving Marin and Sonoma County, CA.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">Irving <span>Real Estate</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="listings.html">Listings</a>
+        <a href="market-updates.html">Market Updates</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+      <div class="nav-contact">
+        <span class="nav-phone">(415) 209-4864</span>
+        <a href="contact.html" class="btn btn--primary" style="padding:9px 18px;">Get in Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-banner container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk</h1>
+      <p>Reach out directly, or send a message below — I respond to most inquiries within a day.</p>
+    </div>
+
+    <section class="section" style="padding-bottom:0;">
+      <div class="container">
+        <div class="contact-row">
+          <a href="tel:+14152094864">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            (415) 209-4864
+          </a>
+          <a href="mailto:nathanirving1984@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M4 6.5L12 13l8-6.5"/></svg>
+            nathanirving1984@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/nathan-irving-8bb08a265" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7.5 10.5v6M7.5 7.5v.01M11.5 16.5v-3.7c0-1.4 1-2.3 2.2-2.3 1.2 0 2 .9 2 2.3v3.7M11.5 10.5v6"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-split">
+        <div>
+          <span class="eyebrow">Send a Message</span>
+          <h2 style="margin-bottom:20px;">Tell me a bit about what you need</h2>
+          <!--
+            EDIT: This form posts to Formspree, a free service that
+            forwards form submissions to your email.
+            1. Go to https://formspree.io and sign up free.
+            2. Create a new form and copy the endpoint it gives you.
+            3. Replace YOUR_FORM_ID below with your real endpoint.
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form-grid">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+            <p class="form-note">This form needs a Formspree endpoint to go live — see the comment above for setup steps.</p>
+          </form>
+        </div>
+
+        <div>
+          <span class="eyebrow">Buyer &amp; Seller Forms</span>
+          <h2 style="margin-bottom:20px;">Starting a search or a sale?</h2>
+          <div class="intake-grid" style="grid-template-columns:1fr;">
+            <div class="intake-card">
+              <h3>Buyer Intake Form</h3>
+              <p>Share what you're looking for — budget, must-haves, timeline — so I can hit the ground running.</p>
+              <!-- EDIT: replace href="#" with the link to your real buyer intake form -->
+              <a href="#" class="btn btn--ghost btn--block">Open Buyer Form</a>
+            </div>
+            <div class="intake-card">
+              <h3>Seller Intake Form</h3>
+              <p>Tell me about your property and goals so I can put together a pricing and marketing plan.</p>
+              <!-- EDIT: replace href="#" with the link to your real seller intake form -->
+              <a href="#" class="btn btn--ghost btn--block">Open Seller Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Service Areas</span>
+          <h2>Where I work</h2>
+          <p>Marin and Sonoma County, town by town.</p>
+        </div>
+        <div class="areas-grid" data-areas-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Irving <span>Real Estate</span></div>
+          <p style="max-width:280px;">Local, attentive guidance for buying and selling homes across Marin &amp; Sonoma County.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="about.html">About Nathan</a>
+          <a href="listings.html">Current Listings</a>
+          <a href="market-updates.html">Market Updates</a>
+          <a href="testimonials.html">Testimonials</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+14152094864">(415) 209-4864</a>
+          <a href="mailto:nathanirving1984@gmail.com">nathanirving1984@gmail.com</a>
+          <a href="https://www.linkedin.com/in/nathan-irving-8bb08a265" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-current-year></span> Irving Real Estate. Equal Housing Opportunity.</span>
+        <span class="license-note">DRE# [Add license number]</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data/service-areas-data.js"></script>
+  <script src="js/areas.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
