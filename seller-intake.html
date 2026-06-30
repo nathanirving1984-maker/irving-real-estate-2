@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Intake Form | Irving Real Estate</title>
+  <meta name="description" content="Tell Nathan Irving about your property and selling goals in Marin and Sonoma County, CA.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">Irving <span>Real Estate</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="listings.html">Listings</a>
+        <a href="market-updates.html">Market Updates</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-contact">
+        <span class="nav-phone">(415) 209-4864</span>
+        <a href="contact.html" class="btn btn--primary" style="padding:9px 18px;">Get in Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-banner container">
+      <span class="eyebrow">Seller Intake</span>
+      <h1>Tell me about your property</h1>
+      <p>A few details about your home and goals so I can put together the right pricing and marketing plan. Takes about 2 minutes.</p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <!--
+          EDIT: Replace YOUR_FORM_ID with the endpoint from a
+          NEW Formspree form created specifically for this page
+          (don't reuse the contact form or buyer form endpoints).
+        -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form-grid" style="max-width:640px;">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-row">
+            <label for="address">Property address</label>
+            <input type="text" id="address" name="address">
+          </div>
+          <div class="form-row">
+            <label for="property_type">Property type</label>
+            <select id="property_type" name="property_type">
+              <option value="Single-family">Single-family</option>
+              <option value="Condo">Condo</option>
+              <option value="Townhouse">Townhouse</option>
+              <option value="Multi-family">Multi-family</option>
+              <option value="Land">Land</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="bedrooms">Bedrooms</label>
+            <select id="bedrooms" name="bedrooms">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" selected>3</option>
+              <option value="4">4</option>
+              <option value="5+">5+</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="bathrooms">Bathrooms</label>
+            <select id="bathrooms" name="bathrooms">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4+">4+</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="sqft">Approximate square footage</label>
+            <input type="text" id="sqft" name="sqft">
+          </div>
+          <div class="form-row">
+            <label for="price_expectation">Price expectation (if you have one in mind)</label>
+            <input type="text" id="price_expectation" name="price_expectation" placeholder="e.g. $1,100,000">
+          </div>
+          <div class="form-row">
+            <label for="timeline">Timeline to sell</label>
+            <select id="timeline" name="timeline">
+              <option value="Just exploring">Just exploring</option>
+              <option value="3-6 months">3–6 months</option>
+              <option value="ASAP">ASAP</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="reason">Reason for selling</label>
+            <input type="text" id="reason" name="reason" placeholder="e.g. relocating, upsizing, downsizing">
+          </div>
+          <div class="form-row">
+            <label for="mortgage_owed">Do you still owe on a mortgage?</label>
+            <select id="mortgage_owed" name="mortgage_owed">
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="other_agent">Currently working with another agent?</label>
+            <select id="other_agent" name="other_agent">
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="referral">How did you hear about me?</label>
+            <input type="text" id="referral" name="referral">
+          </div>
+          <div class="form-row">
+            <label for="notes">Anything else I should know?</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Irving <span>Real Estate</span></div>
+          <p style="max-width:280px;">Local, attentive guidance for buying and selling homes across Marin &amp; Sonoma County.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="about.html">About Nathan</a>
+          <a href="listings.html">Current Listings</a>
+          <a href="market-updates.html">Market Updates</a>
+          <a href="testimonials.html">Testimonials</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+14152094864">(415) 209-4864</a>
+          <a href="mailto:nathanirving1984@gmail.com">nathanirving1984@gmail.com</a>
+          <a href="https://www.linkedin.com/in/nathan-irving-8bb08a265" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-current-year></span> Irving Real Estate. Equal Housing Opportunity.</span>
+        <span class="license-note">DRE# [Add license number]</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
