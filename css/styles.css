@@ -449,6 +449,16 @@ a.text-link:hover { border-color: var(--color-primary); }
   .about-split, .bio-split, .contact-split { grid-template-columns: 1fr; gap: 24px; }
   .about-split .monogram { justify-self: center; }
 }
+.form-row select {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 12px 14px;
+  border: 1px solid var(--color-line-strong);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-radius: var(--radius);
+}
+.form-row select:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; }
 
 /* ---- Misc ---- */
 .mt-0 { margin-top: 0; }
